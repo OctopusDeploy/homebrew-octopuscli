@@ -1,9 +1,9 @@
 class Octopuscli < Formula
   desc "The Octopus CLI (octo) for Octopus, a user-friendly DevOps tool for developers that supports release management, deployment automation, and operations runbooks"
   homepage "https://github.com/OctopusDeploy/OctopusCLI"
-  version "7.4.3429"
-  url "https://octopus-downloads.s3-eu-west-1.amazonaws.com/octopus-tools/7.4.3429/OctopusTools.7.4.3429.osx-x64.tar.gz"
-  sha256 "1d78dbd231436c513fa5c8ad9825d9ed6b606009ca7e21ffe7dbd4b15365c411"
+  version "7.4.3435"
+  url "https://octopus-downloads.s3-eu-west-1.amazonaws.com/octopus-tools/7.4.3435/OctopusTools.7.4.3435.osx-x64.tar.gz"
+  sha256 "b92ded4044938b412829882067e198280f88be9298e7d577583455a308494a8b"
 
   bottle :unneeded
 
