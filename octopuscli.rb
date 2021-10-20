@@ -5,8 +5,6 @@ class Octopuscli < Formula
   url "https://octopus-downloads.s3-eu-west-1.amazonaws.com/octopus-tools/7.4.3475/OctopusTools.7.4.3475.osx-x64.tar.gz"
   sha256 "b15c0e27df65cd5e48dbefe376df6dd8521960c437ddad575eb7236c30161fee"
 
-  bottle :unneeded
-
   def install
     bin.install "octo"
   end
