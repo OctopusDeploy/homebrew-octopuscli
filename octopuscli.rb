@@ -1,9 +1,9 @@
 class Octopuscli < Formula
   desc "The Octopus CLI (octo) for Octopus, a user-friendly DevOps tool for developers that supports release management, deployment automation, and operations runbooks"
   homepage "https://github.com/OctopusDeploy/OctopusCLI"
-  version "8.0.1"
-  url "https://octopus-downloads.s3-eu-west-1.amazonaws.com/octopus-tools/8.0.1/OctopusTools.8.0.1.osx-x64.tar.gz"
-  sha256 "7ee1f3f69b3e49696a7358661d48fef4c85713baa6e0256ff70d2e875fe1e383"
+  version "9.0.0"
+  url "https://octopus-downloads.s3-eu-west-1.amazonaws.com/octopus-tools/9.0.0/OctopusTools.9.0.0.osx-x64.tar.gz"
+  sha256 "d85e80009e6c2bf6c031752d5d01e33e9ba83ba4cbf454574d26f4f62d008849"
 
   def install
     bin.install "octo"
