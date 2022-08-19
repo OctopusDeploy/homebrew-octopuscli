@@ -1,4 +1,4 @@
-name: "Create Release Update Pull Request"
+name: "Create Pull Request for Deployment"
 
 on:
   push:
