@@ -11,8 +11,6 @@ on:
 
 # Increase the access for the GITHUB_TOKEN
 permissions:
-  # This Allows the GITHUB_TOKEN to approve pull requests
-  pull-requests: write
   # This Allows the GITHUB_TOKEN to auto merge pull requests
   contents: write
 
