@@ -11,16 +11,18 @@ on:
 
 # Increase the access for the GH_TOKEN
 permissions:
+  # This Allows the GITHUB_TOKEN to approve pull requests
+  pull-requests: write
   # This Allows the GH_TOKEN to auto merge pull requests
   contents: write
-
-env:
-  GH_TOKEN: ${{secrets.INTEGRATIONS_FNM_BOT_TOKEN}}
 
 jobs:
   create-pr-for-update:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'push' && github.actor == 'team-integrations-fnm-bot' }}
+
+    env:
+      GH_TOKEN: ${{secrets.INTEGRATIONS_FNM_BOT_TOKEN}}
 
     steps:
       - uses: actions/checkout@v3
@@ -33,8 +35,15 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'pull_request' && github.actor == 'team-integrations-fnm-bot' }}
 
+    env:
+      GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      PR_URL: ${{github.event.pull_request.html_url}}
+
     steps:
       - uses: actions/checkout@v3
 
-      - name: Enable auto-merge for release update PRs
-        run: gh pr merge --auto --squash "${{github.event.pull_request.html_url}}"
+      - name: Approve PR
+        run: |
+          gh pr review --approve "$PR_URL"
+
+          gh pr merge --auto --squash "$PR_URL"
