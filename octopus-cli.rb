@@ -33,11 +33,10 @@ class OctopusCli < Formula
 
   def install
     bin.install "octopus"
-    # TODO completions?
-    # bash_completion.install "completions/goreleaser.bash" => "goreleaser"
-    # zsh_completion.install "completions/goreleaser.zsh" => "_goreleaser"
-    # fish_completion.install "completions/goreleaser.fish"
-    # man1.install "manpages/goreleaser.1.gz"
+    # future: enhance the CLI to generate completion scripts, and install them as follows
+    # bash_completion.install "completions/octopus.bash" => "octopus"
+    # zsh_completion.install "completions/octopus.zsh" => "_octopus"
+    # fish_completion.install "completions/octopus.fish"
   end
 
   test do
