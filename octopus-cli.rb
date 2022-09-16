@@ -5,8 +5,8 @@ class OctopusCli < Formula
 
   # the publishing script overwrites these with the correct values
   version "0.2.3"
-  macos_intel_sha256 = "083546f9c65152236af19d25868b5a4904a9836876249c79c660d2e869e0a755"
-  macos_arm_sha256 = "9f50a81fa96325f9ba2d08626361882f6016a0f4253615a93d45cd29ad4b4ef7"
+  macos_intel_sha256 = "d65dbfeaa624a560108fee57a5e73c196448e196cdfa412fb400601b342a6b5c"
+  macos_arm_sha256 = "a7b5de6f1fce3b29b24a2c23e0dfad4372320372e6ef2d56ba35934a73dbaf4d"
   linux_intel_sha256 = "1ec20750d986e4d5044f5532f47535546dd5cb24da0b3bc791de9d229ae2b7be"
   linux_arm_sha256 = "b98195334ce3713d62a064a0c2dae8a04bb1848e27e3dba3ddab210a1c217929"
   
