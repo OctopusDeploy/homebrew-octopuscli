@@ -4,11 +4,11 @@ class OctopusCli < Formula
   license "Apache-2.0"
 
   # the publishing script overwrites these with the correct values
-  version "0.2.3"
-  macos_intel_sha256 = "083546f9c65152236af19d25868b5a4904a9836876249c79c660d2e869e0a755"
-  macos_arm_sha256 = "9f50a81fa96325f9ba2d08626361882f6016a0f4253615a93d45cd29ad4b4ef7"
-  linux_intel_sha256 = "1ec20750d986e4d5044f5532f47535546dd5cb24da0b3bc791de9d229ae2b7be"
-  linux_arm_sha256 = "b98195334ce3713d62a064a0c2dae8a04bb1848e27e3dba3ddab210a1c217929"
+  version "0.2.2"
+  macos_intel_sha256 = "082166ca47effe9916dc4b77853c843172c7ff775c4962e3802b4388ee54596b"
+  macos_arm_sha256 = "60cc091011b651c378fd60c495d066a7164000c3624275b1028ca65956553318"
+  linux_intel_sha256 = "6d608fd79ad7a0ddff331b5dac818dc252d9780a55b913080d983a87e55690cf"
+  linux_arm_sha256 = "0e7da87c162073d7c6f7ca1689021e60a86bd8f5e4382a40109b4eb90838aef9"
   
   # use ruby to generate the correct values based on above variables
   __base_url = "https://github.com/OctopusDeploy/cli/releases/download/v#{version}"
