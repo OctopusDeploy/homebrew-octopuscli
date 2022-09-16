@@ -4,7 +4,7 @@ class OctopusCli < Formula
   license "Apache-2.0"
 
   # the publishing script overwrites these with the correct values
-  version "0.2.3"
+  version "0.2.2"
   macos_intel_sha256 = "083546f9c65152236af19d25868b5a4904a9836876249c79c660d2e869e0a755"
   macos_arm_sha256 = "9f50a81fa96325f9ba2d08626361882f6016a0f4253615a93d45cd29ad4b4ef7"
   linux_intel_sha256 = "1ec20750d986e4d5044f5532f47535546dd5cb24da0b3bc791de9d229ae2b7be"
@@ -14,19 +14,19 @@ class OctopusCli < Formula
   __base_url = "https://github.com/OctopusDeploy/cli/releases/download/v#{version}"
   on_macos do
     if Hardware::CPU.intel?
-      url "#{__base_url}/octopus_#{version}_macOS_x86_64.tar.gz"
+      url ""
       sha256 macos_intel_sha256
     elsif Hardware::CPU.arm?
-      url "#{__base_url}/octopus_#{version}_macOS_arm64.tar.gz"
+      url ""
       sha256 macos_arm_sha256 
     end
   end
   on_linux do
     if Hardware::CPU.intel?
-      url "#{__base_url}/octopus_#{version}_Linux_x86_64.tar.gz"
+      url ""
       sha256 linux_intel_sha256
     elsif Hardware::CPU.arm?
-      url "#{__base_url}/octopus_#{version}_Linux_arm64.tar.gz"
+      url ""
       sha256 linux_arm_sha256
     end
   end
