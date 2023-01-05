@@ -5,13 +5,13 @@
 class OctopusCli < Formula
   desc "The New CLI (octopus) for Octopus Deploy, a user-friendly DevOps tool for developers that supports release management, deployment automation, and operations runbooks"
   homepage "https://github.com/OctopusDeploy/cli"
-  version "0.10.2"
+  version "1.0.0"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/OctopusDeploy/cli/releases/download/v0.10.2/octopus_0.10.2_macOS_amd64.tar.gz"
-      sha256 "f840f34ba0a63579cb8239334eb7db01eafc183389216cf54685e08b4044614a"
+    if Hardware::CPU.arm?
+      url "https://github.com/OctopusDeploy/cli/releases/download/v1.0.0/octopus_1.0.0_macOS_arm64.tar.gz"
+      sha256 "a4c5c4df5ea1f5392f8332ff85a8a5a8145bf1c45bf9f1afc8a4b4cf19ec076f"
 
       def install
         bin.install "octopus"
@@ -21,9 +21,9 @@ class OctopusCli < Formula
         # fish_completion.install "completions/octopus.fish"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/OctopusDeploy/cli/releases/download/v0.10.2/octopus_0.10.2_macOS_arm64.tar.gz"
-      sha256 "ac7476111344a353087c8043fd462cddde2249f1e6fc98d7031d59413da72aeb"
+    if Hardware::CPU.intel?
+      url "https://github.com/OctopusDeploy/cli/releases/download/v1.0.0/octopus_1.0.0_macOS_amd64.tar.gz"
+      sha256 "ebfd9ae0ef1b382a887bcb2982cc58f08ff216dea437558d4814e8d1a7231cf7"
 
       def install
         bin.install "octopus"
@@ -36,9 +36,9 @@ class OctopusCli < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/OctopusDeploy/cli/releases/download/v0.10.2/octopus_0.10.2_linux_arm64.tar.gz"
-      sha256 "27e725bc2e05d76a7c729b2e3633113fee71fcb2c4b8f65a4164e973ffc85a9e"
+    if Hardware::CPU.intel?
+      url "https://github.com/OctopusDeploy/cli/releases/download/v1.0.0/octopus_1.0.0_linux_amd64.tar.gz"
+      sha256 "3cf43ec239d8c87be120d5db513711c557b6abb24f01d45dc9b4583c86d2b0cc"
 
       def install
         bin.install "octopus"
@@ -48,9 +48,9 @@ class OctopusCli < Formula
         # fish_completion.install "completions/octopus.fish"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/OctopusDeploy/cli/releases/download/v0.10.2/octopus_0.10.2_linux_amd64.tar.gz"
-      sha256 "5a8030e3c3a4c33bcf410b330f6c12b9130928593ec74ce453e4a452b0d46f69"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/OctopusDeploy/cli/releases/download/v1.0.0/octopus_1.0.0_linux_arm64.tar.gz"
+      sha256 "64d9f1d9ae02c727c9e0d432914c16a2904b1cf33ab20c6194f408dc91e62276"
 
       def install
         bin.install "octopus"
