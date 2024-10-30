@@ -5,13 +5,13 @@
 class OctopusCli < Formula
   desc "The New CLI (octopus) for Octopus Deploy, a user-friendly DevOps tool for developers that supports release management, deployment automation, and operations runbooks"
   homepage "https://github.com/OctopusDeploy/cli"
-  version "2.10.3"
+  version "2.11.0"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/OctopusDeploy/cli/releases/download/v2.10.3/octopus_2.10.3_macOS_amd64.tar.gz"
-      sha256 "8984c2782466c5c11b82ed56619a125e45505f42d848a79f85b51819db5b2c17"
+      url "https://github.com/OctopusDeploy/cli/releases/download/v2.11.0/octopus_2.11.0_macOS_amd64.tar.gz"
+      sha256 "be66e032761b68a030a27e081f506c5f3b18d089642b2418f427cd1c19e7da7a"
 
       def install
         bin.install "octopus"
@@ -22,8 +22,8 @@ class OctopusCli < Formula
       end
     end
     on_arm do
-      url "https://github.com/OctopusDeploy/cli/releases/download/v2.10.3/octopus_2.10.3_macOS_arm64.tar.gz"
-      sha256 "da26d1514fc3aa98b8cc9107bb66f5569bae07f62c83abf928033fd346a341aa"
+      url "https://github.com/OctopusDeploy/cli/releases/download/v2.11.0/octopus_2.11.0_macOS_arm64.tar.gz"
+      sha256 "6f4bf18e5cdd1536120462c24162d18fd631e1c04eaad9aed69548dd8105419d"
 
       def install
         bin.install "octopus"
@@ -38,8 +38,8 @@ class OctopusCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/OctopusDeploy/cli/releases/download/v2.10.3/octopus_2.10.3_linux_amd64.tar.gz"
-        sha256 "aa9c6818345e8b52571e0d718cb80451f6ce7bef3c269151aae253d6ade8cffd"
+        url "https://github.com/OctopusDeploy/cli/releases/download/v2.11.0/octopus_2.11.0_linux_amd64.tar.gz"
+        sha256 "12f1bd33d3dc1be072c1896d1a47378345cf76a925442857828a1629f207498e"
 
         def install
           bin.install "octopus"
@@ -52,8 +52,8 @@ class OctopusCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/OctopusDeploy/cli/releases/download/v2.10.3/octopus_2.10.3_linux_arm64.tar.gz"
-        sha256 "a0bd0479c9c41592876982f7ff8892687b5612fd04a6369e4b8a11014b3eb569"
+        url "https://github.com/OctopusDeploy/cli/releases/download/v2.11.0/octopus_2.11.0_linux_arm64.tar.gz"
+        sha256 "d641cb4ab826ac40bfd7330e9c4e8d795d36e6075873ac51f757d41ed76301cc"
 
         def install
           bin.install "octopus"
